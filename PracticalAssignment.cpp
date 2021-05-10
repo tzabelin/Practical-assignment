@@ -1,6 +1,7 @@
 ﻿#include "EAN.h"
 #include <list>
 #include <fstream>
+#include <algorithm>
 
 using namespace std;
 

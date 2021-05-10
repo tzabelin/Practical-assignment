@@ -1,8 +1,8 @@
 #include "EAN.h"
 Bottle::Bottle(std::string ean, std::string a, std::string p) throw(std::invalid_argument, std::length_error)
 {
-	if (ean.length() < 13)
-		throw std::length_error("EAN is too short");
+	if (ean.length() !=13)
+		throw std::length_error("EAN has incorrect length");
 	ean_code = ean;
 	article = a;
 	price=std::stod(p); /*if p is incorrect float-point value stod will throw std::invalid_argument exception*/

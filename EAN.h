@@ -3,13 +3,13 @@
 #include <iostream>
 #include <string>
 #include <stdexcept>
-class Bottle
+class Bottle /*every entity of this class preserve one type of bottles with specific EAN*/
 {
 private:
 	std::string ean_code;
 	std::string article;
 	double price;
-	int count;
+	int count; /*number of recycled bottles with this EAN*/
 public:
 	Bottle(std::string ean,std::string article,std::string price) throw(std::invalid_argument, std::length_error);
 	void AnotherBottle();

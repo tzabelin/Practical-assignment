@@ -114,8 +114,11 @@ void print_receipt(list<Bottle> &Bottles, ofstream file)
 	double sum = 0;
 	for (Bottle& elem : Bottles)
 	{
+		if(elem.get_count()>0)
+		{
 		file << elem;
 		sum += elem.get_count() * elem.get_price();
+		}
 	}
 	cout << "Total amount of refund is " << sum << " euros\n";
 	file << "Total: " << sum;

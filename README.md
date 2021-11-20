@@ -1,5 +1,6 @@
 # Practical-assignment-
-C++ Programming essentials
+C++ Programming essentials.
+
 This is the practical assignment at the end of C++ Essentials course offered by C++ Institute
 # Prerequisites
 
